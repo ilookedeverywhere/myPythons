@@ -1,0 +1,12 @@
+selection = mc.ls(sl=True);
+
+def randomize():
+  for x in selection:
+  randomx = (random.random()-0.5)*100
+  randomy = (random.random()-0.5)*100
+  randomz = (random.random()-0.5)*100
+  mc.setAttr (x + ".translateX",1*randomx);
+  mc.setAttr (x + ".translateY",1*randomy);
+  mc.setAttr (x + ".translateZ",1*randomz);
+
+randomize()
